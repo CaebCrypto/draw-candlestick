@@ -1,0 +1,62 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest/globals": true
+    },
+    "plugins": [
+        "jest"
+    ],
+    "extends": [
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+
+        // Jest
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+
+        // enable additional rules
+        "indent": [
+            "error",
+            4
+        ],
+        "padded-blocks": [
+            "error",
+            {
+                "classes": "always",
+                "switches": "always"
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        // override default options for rules from base configurations
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "no-cond-assign": [
+            "error",
+            "always"
+        ],
+        // disable rules from base configurations
+        "no-console": "off"
+    }
+}
